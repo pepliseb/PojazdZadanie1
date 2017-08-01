@@ -1,11 +1,10 @@
 
-
 import java.awt.Color;
 
 public abstract class Pojazd {
-    private int passenger;
-    private int fuelcap;
-    private double lkm;
+    private int passenger;    // liczba pasazerow pasazerow
+    private int fuelcap; // pojemnosc zbiornika w litrach
+    private double lkm;        // zużycie paliwa w litrach na 100 kilometrów
     private double liters;
     private int dist;
     private Color kolor;
@@ -15,7 +14,6 @@ public abstract class Pojazd {
 //    public Pojazd() {
 //
 //    }
-
 
         public Pojazd(int startPassenger, int startFuelcap, double startLkm, double startLiters, int startDist, Color startKolor, int startOsie, double startMoc) {
         this.passenger = startPassenger;
@@ -30,24 +28,22 @@ public abstract class Pojazd {
 
 
     public Color getKolor() {
-
-        return kolor;
+              return kolor;
     }
 
     public void setKolor(Color kolor) {
-
-        this.kolor = kolor;
+              this.kolor = kolor;
     }
 
 
 
     public double getMoc() {
-
-            return moc;
+             return moc;
     }
 
     public void setMoc(double moc) {
-        this.moc = moc;
+
+            this.moc = moc;
     }
 
 
@@ -103,12 +99,12 @@ public abstract class Pojazd {
 
 
 
-    public int range(){
-        return (int)(fuelcap/lkm*100);
+    public int range(int fuelcap, double lkm){
+        return (int)(fuelcap / lkm * 100);
     }
 
-    public  double fuelneeded(int km){
-        return (double) km/100 * lkm;
+    public  double fuelneeded(int km, double lkm){
+        return (double) km / 100 * lkm;
     }
 
     

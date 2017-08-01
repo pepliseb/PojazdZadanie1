@@ -3,22 +3,23 @@ import java.awt.*;
 
 public abstract class PojazdSilnikowy extends Pojazd {
 
-    private String engine ;
+    private String typeEngine ;
+    private double lkm = 0;
 
-    public PojazdSilnikowy(int passenger, int fuelcap, double lkm, double liters, int dist, Color kolor, int osie, int moc, String engine ) {
+    public PojazdSilnikowy(int passenger, int fuelcap, double lkm, double liters, int dist, Color kolor, int osie, int moc, String typeEngine) {
         super(passenger,  fuelcap,  lkm,  liters,  dist, kolor, osie, moc);
-        this.engine = engine;
+        this.typeEngine = typeEngine;
 
     }
 
     public abstract boolean wymienOlej();
 
-    public String getEngine() {
-        return engine;
+    public String getTypeEngine() {
+        return typeEngine;
     }
 
-    public void setEngine(String engine) {
-        this.engine = engine;
+    public void setTypeEngine(String typeEngine) {
+        this.typeEngine = typeEngine;
     }
 }
 

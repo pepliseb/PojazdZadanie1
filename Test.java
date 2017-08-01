@@ -4,7 +4,8 @@ public class Test {
 
     public static void main(String[] args) {
 
-
+        SamochodCiezarowy samochodCiezarowy = new SamochodCiezarowy(6,3,3,3,3,Color.RED,4, 1500, true, 30000, "diesel");
+        System.out.println(samochodCiezarowy.getMaxCiezar());
 
         PojazdSilnikowy pojazdCieA = new SamochodCiezarowy(3,3,3,3,3,Color.RED,8,7000,true,30000, "benzyna");
         PojazdSilnikowy pojazdCieB = new SamochodCiezarowy(3,3,3,3,3,Color.BLUE,8,5000,false, 450, "benzyna");
@@ -18,38 +19,44 @@ public class Test {
 
 
         PojazdSilnikowy pojazdSilnikowy = new SamochodDostawczy(5,3000,3,4,5,Color.RED,3,4,true, 400,"benzyna");
-        
 
-        
         Test t = new Test();
-//        PojazdSilnikowy pojazd = new Pojazd( );
+
+
+// PojazdSilnikowy pojazd = new Pojazd( );
 //        pojazdB.setKolor(Color.BLUE);
 //
 //
 //        SamochodCiezarowy pojazdC = new SamochodCiezarowy();
-
-
+        pojazdCieA.zatrzymaj();
+        
 
          // ile paliwa na x km 
-        pojazdCieD.fuelneeded(800);
+        System.out.println("Potrzebuje fuelneeded " + pojazdCieD.fuelneeded(100,5));
+        System.out.println("Potrzebuje range " + pojazdCieD.range(55,12.5));
+        System.out.println("Potrzebuje range " + pojazdOsoA.range(55, 8.6));
+
         System.out.println(pojazdOsoA.getPassenger());
         System.out.println(pojazdCieA.getKolor());
         System.out.println(pojazdCieB.getKolor());
         System.out.println(pojazdCieC.getDist());
         System.out.println(pojazdCieA.getClass());
-        System.out.println(pojazdOsoD.fuelneeded(1000)) ;
+        System.out.println(pojazdOsoD.fuelneeded(1000,5)) ;
+        System.out.println(pojazdCieD.fuelneeded(1000,6)) ;
         System.out.println(pojazdCieD.getPassenger());
-        System.out.println(pojazdOsoD.getEngine());
+        System.out.println(pojazdOsoD.getTypeEngine());
         System.out.println(pojazdOsoA.getFuelcap());
         
 //        System.out.println(pojazdSilnikowy.setPassenger(4));
     }
 
     public boolean sprawdzKolor(Pojazd a, Pojazd b) {
+
         return a.getKolor().equals(b.getKolor());
     }
 
     public boolean zmienOlej(PojazdSilnikowy p) {
+
         return p.wymienOlej();
     }
 
