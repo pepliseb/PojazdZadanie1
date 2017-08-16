@@ -6,7 +6,7 @@ public class Menu {
 
     private static List<String> listOfNames;
     private static Scanner scanner;
-public static void()
+public static void(){
     listOfNames = new ArrayList<>();
     scanner = new Scanner(System.in);
 
