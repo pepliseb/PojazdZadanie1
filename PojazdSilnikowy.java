@@ -21,6 +21,8 @@ public abstract class PojazdSilnikowy extends Pojazd {
     public void setTypeEngine(String typeEngine) {
         this.typeEngine = typeEngine;
     }
+
+
 }
 
 

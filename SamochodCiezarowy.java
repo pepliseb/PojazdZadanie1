@@ -17,10 +17,12 @@ public class SamochodCiezarowy extends PojazdSilnikowy {
     }
 
     public void setCzyMaPrzyczepe(boolean czyMaPrzyczepe) {
+
         this.czyMaPrzyczepe = czyMaPrzyczepe;
     }
 
     public int getMaxCiezar() {
+
         return maxCiezar;
     }
 
