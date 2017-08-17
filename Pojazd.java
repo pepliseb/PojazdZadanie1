@@ -10,12 +10,13 @@ public abstract class Pojazd {
     private Color kolor;
     private int osie;
     private double moc;
+    private boolean free;
 
 //    public Pojazd() {
 //
 //    }
 
-        public Pojazd(int startPassenger, int startFuelcap, double startLkm, double startLiters, int startDist, Color startKolor, int startOsie, double startMoc) {
+        public Pojazd(int startPassenger, int startFuelcap, double startLkm, double startLiters, int startDist, Color startKolor, int startOsie, double startMoc, boolean startFree) {
         this.passenger = startPassenger;
         this.fuelcap = startFuelcap;
         this.lkm = startLkm;
@@ -24,6 +25,8 @@ public abstract class Pojazd {
         this.kolor = startKolor;
         this.osie = startOsie;
         this.moc = startMoc;
+        this.free = startFree;
+
     }
 
 
@@ -42,7 +45,6 @@ public abstract class Pojazd {
     }
 
     public void setMoc(double moc) {
-
             this.moc = moc;
     }
 

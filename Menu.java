@@ -4,18 +4,11 @@
 //
 //public class Menu {
 //
-//    private static List<String> listOfNames;
-//    private static Scanner scanner;
-//
 //    int choice ;
-//
+//    Scanner scanner = new Scanner(System.in);
 //    public Menu(int choice) {
 //        this.choice = choice;
 //    }
-//
-//    listOfNames = new ArrayList<>();
-//    scanner = new Scanner(System.in);
-//
 //
 //        do {
 //        printMain();
@@ -23,12 +16,12 @@
 //        parseChoice(choice);
 //    }while (choice != 3);
 //
-//}
+//
 //    private static void  printMain(){
 //        System.out.println("------------------------------------------");
 //        System.out.println("Wpisz: ");
-//        System.out.println(" 1 - dostępne pojazdy");
-//        System.out.println(" 2 - aby wyświetlić wszystkie imiona");
+//        System.out.println(" 1 - Dostępne pojazdy");
+//        System.out.println(" 2 - Pokaż zasięg ");
 //        System.out.println(" 3 - aby wyjść");
 //
 //        System.out.println("Twój wybór: ");
@@ -39,9 +32,10 @@
 //        switch (choice){
 //
 //            case 1:{
-//                System.out.println("Wpisz imię: ");
+//                System.out.println("Podaj nazwe auta ");
 //                listOfNames.add(scanner.nextLine());
-//                System.out.println("Dodałem imie!");
+//                System.out.println(samochodCiezarowy.getMaxCiezar());
+//                System.out.println("Podałem nazwę");
 //                break;
 //            }
 //            case 2: {

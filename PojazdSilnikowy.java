@@ -6,8 +6,8 @@ public abstract class PojazdSilnikowy extends Pojazd {
     private String typeEngine ;
     private double lkm = 0;
 
-    public PojazdSilnikowy(int passenger, int fuelcap, double lkm, double liters, int dist, Color kolor, int osie, int moc, String typeEngine) {
-        super(passenger,  fuelcap,  lkm,  liters,  dist, kolor, osie, moc);
+    public PojazdSilnikowy(int passenger, int fuelcap, double lkm, double liters, int dist, Color kolor, int osie, int moc, String typeEngine, boolean free) {
+        super(passenger,  fuelcap,  lkm,  liters,  dist, kolor, osie, moc, free);
         this.typeEngine = typeEngine;
 
     }

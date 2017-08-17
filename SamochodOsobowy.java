@@ -4,8 +4,8 @@ public class SamochodOsobowy extends PojazdSilnikowy {
 
     private boolean czyHybryda;
     private double lkm = 8.6;
-    public SamochodOsobowy(int passenger, int fuelcap, double lkm, double liters, int dist, Color kolor, int osie, int moc, boolean czyHybryda, String typeEngine) {
-        super(passenger, fuelcap, lkm, liters, dist, kolor, osie, moc, typeEngine);
+    public SamochodOsobowy(int passenger, int fuelcap, double lkm, double liters, int dist, Color kolor, int osie, int moc, boolean czyHybryda, String typeEngine, boolean free) {
+        super(passenger, fuelcap, lkm, liters, dist, kolor, osie, moc, typeEngine, free);
         this.czyHybryda = czyHybryda;
     }
 
