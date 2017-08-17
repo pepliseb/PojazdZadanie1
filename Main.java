@@ -18,7 +18,7 @@ public class Main {
     public Main() {
         scanner = new Scanner(System.in);
     start();
-        SamochodCiezarowy samochodCiezarowy = new SamochodCiezarowy(6,3,3,3,3,Color.RED,4, 1500, true, 30000, "diesel" , true);
+//        SamochodCiezarowy samochodCiezarowy = new SamochodCiezarowy(6,3,3,3,3,Color.RED,4, 1500, true, 30000, "diesel" , true);
 
     }
 
@@ -71,13 +71,13 @@ public class Main {
     }
 
 SamochodCiezarowy samochodCiezarowy = new SamochodCiezarowy(6,3,3,3,3,Color.RED,4, 1500, true, 30000, "diesel" , true);
-    SamochodOsobowy pojazdOsoB = new SamochodOsobowy(7,350,3,3,3,Color.WHITE,3,3,false,"diesel");
+    SamochodOsobowy samochodOsobowy = new SamochodOsobowy(7,350,3,3,3,Color.WHITE,3,3,false,"diesel", false);
 
     private void countPassangers() {
 
         System.out.println("Liczba pasażerów dla samochodu ciężarowego: " + samochodCiezarowy.getPassenger());
 
-        System.out.println("Liczba pasażerów dla samochodu osobowego: " + sa.getPassenger());
+        System.out.println("Liczba pasażerów dla samochodu osobowego: " + samochodOsobowy.getPassenger());
 
     }
 
@@ -86,8 +86,9 @@ SamochodCiezarowy samochodCiezarowy = new SamochodCiezarowy(6,3,3,3,3,Color.RED,
     }
 
     private void colorCars(){
-
-    }
+        System.out.println("Kolor auta osobowego: " + samochodOsobowy.getKolor());
+        System.out.println("Kolor auta cieżarowego: " + samochodCiezarowy.getKolor());
+            }
 
     private void showFreeCars() {
           PojazdSilnikowy pojazdCiezarowyA = new SamochodCiezarowy(3,3,3,3,3,Color.RED,8,7000,true,30000, "benzyna", false);

@@ -10,7 +10,7 @@ public class SamochodCiezarowy extends PojazdSilnikowy {
         this.czyMaPrzyczepe = czyMaPrzyczepe;
         this.maxCiezar = maxCiezar;
     }
-    SamochodCiezarowy samochodCiezarowy = new SamochodCiezarowy(6,3,3,3,3,Color.RED,4, 1500, true, 30000, "diesel" , true);
+//    SamochodCiezarowy samochodCiezarowy = new SamochodCiezarowy(6,3,3,3,3,Color.RED,4, 1500, true, 30000, "diesel" , true);
 
     private double lkm = 12.5;
 
